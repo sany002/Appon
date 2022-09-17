@@ -1,0 +1,781 @@
+/* ##################### All Common CSS Start  ##################### */
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+a,a:hover{
+    text-decoration: none;
+}
+ul,ol{
+    list-style-type: none;
+}
+img{
+    vertical-align: middle;
+}
+h1,h2,h3,h4,h5,h6,p{
+    margin: 0;
+    padding: 0;
+    line-height: 0.8;
+}
+/* ##################### All Common CSS End  ##################### */
+
+/* #####################  Header CSS Start  #####################  */
+.navbar{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+}
+.sticky-header{
+    -webkit-box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+    -moz-box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+    box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+    animation: topheader .6s;
+    -webkit-animation: topheader .6s;
+}
+@keyframes topheader {
+    0%{
+        top: -100px;
+    }    
+    100%{
+        top:0;
+    }
+}
+.navbar-brand img{
+    width: 200px;
+}
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .show > .nav-link {
+	color: #6a4892;
+}
+.navbar-light .navbar-nav .nav-link {
+	color: #fdfdfe;
+    transition: .4s;
+}
+.navbar-light .navbar-nav .nav-link:hover{
+    color: #6a4892;
+}
+.navbar-expand-lg .navbar-nav .nav-link {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	padding: 27px 0 27px 40px;
+}
+.navbar-expand-lg .navbar-nav .nav-item:last-child .nav-link {
+	padding: 10px 20px;
+	margin-top: 20px;
+	font-weight: 500;
+	background: #6a4892;
+	border: 1px solid #6a4892;
+	line-height: 15px;
+	border-radius: 5px;
+	margin-left: 30px;
+	transition: .4s;
+}
+.navbar-expand-lg .navbar-nav .nav-item:last-child .nav-link:hover {
+    color: #6a4892;
+    background: transparent;
+}
+/* #####################  Header CSS End  #######################  */
+
+/* #####################  banner CSS Start  #####################  */
+#banner{
+    background: url(../images/banner.jpg) no-repeat center center;
+    background-size: cover;
+}
+.banner-overly{
+    background: rgba(0, 0, 0, 0.6);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner-text h1{
+    font-size: 56px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #f1f1f1;
+    margin-bottom: 28px;
+}
+.banner-text h1 span{
+    color: #6a4892;
+}
+.banner-text h3{
+    color: #f1f1f1;
+    font-weight: 300;
+    font-size: 32px;
+    font-family: 'Raleway', sans-serif;
+    padding-bottom: 60px;
+    position: relative;
+}
+.banner-text h3::after{
+    content: '';
+    position: absolute;
+    bottom: 30px;
+    right: 0;
+    width: 200px;
+    height: 1px;
+    background: #f1f1f1;
+}
+.banner-text p {
+	color: #f1f1f1;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 24px;
+	padding-left: 38px;
+    margin-bottom: 50px;
+}
+.mybtn {
+    background: #6a4892;
+    padding: 10px 20px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.mybtn a{
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+    font-weight: 400;
+    font-size: 14px;
+}
+.mybtn i{
+    color: #fff;
+    font-size: 25px;
+    margin-right: 15px;
+}
+.mybtn a span{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+}
+.banner-btn .mybtn:first-child{
+    margin-right: 15px;
+}
+.banner-btn .mybtn:nth-child(2){
+    background: #f1f1f1;
+}
+.banner-btn .mybtn:nth-child(2) a{
+    color: #353535 ;
+}
+.banner-btn .mybtn:nth-child(2) i{
+    color: #353535 ;
+    font-size: 35px;
+}
+/* #####################  banner CSS End  #######################  */
+
+/* #####################  about CSS Start  #####################  */
+#about{
+    padding: 80px 0 40px;
+}
+.common-head h3{
+    color: #353535;
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: 'Raleway', sans-serif;
+}
+.common-head img{}
+.about-text p{
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 400;
+    color: #777777;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    margin-top: 30px;
+}
+.about-text p span{
+    padding-top: 30px;
+    display: inline-block;
+}
+/* #####################  about CSS End  #######################  */
+
+/* #####################  features CSS Start  #####################  */
+#features{
+    background: #f1f1f1;
+    padding: 30px;
+}
+.feature-main{
+    margin-top: 30px;
+    align-items: center;
+}
+.feature-left-main{
+    position: relative;
+    padding: 30px 0;
+}
+.feature-left-main::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 80%;
+    height: 1px;
+    background: #353535;
+    transition: .4s;
+    -webkit-transition: .4s;
+    -moz-transition: .4s;
+    -ms-transition: .4s;
+    -o-transition: .4s;
+}
+.feature-left-main:hover::after{
+    width: 100%;
+    background: #744fa0;
+}
+.feature-left-item{
+    display: flex;
+    align-items: center;
+}
+.feature-left-item i{
+    font-size: 35px;
+    color: #353535;
+    margin-right: 15px;
+    transition: .4s;
+    -webkit-transition: .4s;
+    -moz-transition: .4s;
+    -ms-transition: .4s;
+    -o-transition: .4s;
+}
+.feature-left-item h4{
+    color: #353535;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    padding-bottom: 5px;
+    text-transform: uppercase;
+    transition: .4s;
+    -webkit-transition: .4s;
+    -moz-transition: .4s;
+    -ms-transition: .4s;
+    -o-transition: .4s;
+}
+.feature-left-main:hover .feature-left-item h4{
+    color: #744fa0;
+}
+.feature-left-main:hover .feature-left-item i{
+    color: #744fa0;
+}
+.feature-left-main:hover .feature-left-item p{
+    color: #744fa0;
+}
+.feature-left-item p{
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #777777;
+}
+.feature-right{
+    text-align: right;
+}
+.feature-right h4{
+    font-style: 18px;
+    font-weight: 700;
+    color: #353535;
+    font-family: 'Raleway', sans-serif;
+    padding-bottom: 30px;
+}
+.feature-right p {
+	font-size: 14px;
+	line-height: 24px;
+	color: #777777;
+	font-family: 'Raleway', sans-serif;
+	padding-left: 30px;
+}
+.feature-right p span{
+    padding-top: 30px;
+    display: inline-block;
+    font-family: 'Open Sans', sans-serif;
+}
+/* #####################  features CSS End  #######################  */
+
+/* #####################  Screenshot CSS Start  #####################  */
+#screemshot{
+    padding: 80px 0 52px;
+    position: relative;
+}
+.shot-main{
+    padding-top: 30px;
+}
+.dots{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+.dots div{
+    display: inline-block;
+    margin: 0 10px;
+    width: 20px;
+    height: 20px;
+    border: 5px solid #353535;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    transition: .4s;
+    -webkit-transition: .4s;
+    -moz-transition: .4s;
+    -ms-transition: .4s;
+    -o-transition: .4s;
+    cursor: pointer;
+    position: relative;
+}
+.dots div::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #744fa0;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transition: .4s;
+    -webkit-transition: .4s;
+    -moz-transition: .4s;
+    -ms-transition: .4s;
+    -o-transition: .4s;
+    opacity: 0;
+}
+.dots div:hover{
+    border: 5px solid #744fa0;
+}
+.dots div:hover::before{
+    opacity: 1;
+}
+/* #####################  Screenshot CSS End  #######################  */
+
+/* #####################  Video CSS Start  #####################  */
+#video{
+    padding: 75px 0 80px;
+}
+.video-main{
+    margin-top: 30px;
+    background: url(../images/video.jpg) no-repeat center center;
+    background-size: center;
+}
+.video-overly{
+    padding: 215px 0;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.6);
+}
+.video-overly i {
+	font-size: 30px;
+	color: #fff;
+	cursor: pointer;
+	width: 70px;
+	height: 70px;
+	border: 10px solid #fff;
+	text-align: center;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
+	padding-top: 10px;
+	padding-left: 5px;
+}
+/* #####################  Video CSS End  #######################  */
+
+/* #####################  Plan CSS Start  #####################  */
+.plan-item{
+    margin-top: 30px;
+}
+.plan-item h4{
+    color: #353535;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 22px 0;
+    font-family: 'Raleway', sans-serif;
+    background: #f1f1f1;
+    transition: .4s;
+    -webkit-transition: .4s;
+    -moz-transition: .4s;
+    -ms-transition: .4s;
+    -o-transition: .4s;
+}
+.plan-item .ammount{
+    margin: 20px auto;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 5px solid #f1f1f1;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.plan-item .ammount h5{
+    color: #353535;
+    font-size: 40px;
+    font-weight: 700;
+    font-family: 'Raleway', sans-serif;
+    padding-bottom: 15px;
+}
+.plan-item .ammount h5 span{
+    font-size: 14px;
+}
+.plan-item .ammount p{
+    color: #555555;
+    font-size: 15px;
+    font-weight: 700;
+    font-family: 'Raleway', sans-serif;
+}
+.plan-item .p-box{
+    background: #f1f1f1;
+    padding-top: 35px;
+    padding-bottom: 20px;
+}
+.plan-item p{
+    color: #555555;
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    padding-bottom: 18px;
+}
+.plan-btn{
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+.plan-btn a{
+    color: #353535;
+    font-size: 14px;
+    font-weight: 700;
+    font-family: 'Raleway', sans-serif;
+    padding: 10px 20px;
+    border: 1px solid #353535;
+    display: inline-block;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.plan-item:hover h4{
+    color: #fff;
+    background: #744fa0;
+}
+.plan-item:hover .plan-btn a{
+    color: #fff;
+    background: #744fa0;
+    border: 1px solid #744fa0;
+}
+/* #####################  Plan CSS End  #######################  */
+
+/* #####################  Team CSS Start  #####################  */
+#team{
+    padding: 80px 0;
+}
+.team-item{
+    border: 1px solid #cccccc;
+    margin-top: 30px;
+}
+.team-item figure{
+    background: #f1f1f1;
+    height: 400px;
+    overflow: hidden;
+    text-align: center;
+    padding: 40px 15px 0 40px;
+    position: relative;
+}
+.team-item figure .overly{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: .4s;
+    -webkit-transition: .4s;
+    -moz-transition: .4s;
+    -ms-transition: .4s;
+    -o-transition: .4s;
+}
+.team-item:hover figure .overly{
+    opacity: 1;
+    visibility: visible;
+}
+.team-item .icons i{
+    color: #353535;
+    width: 50px;
+    line-height: 50px;
+    text-align: center;
+    background: #fff;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    margin: 0 5px;
+    transition: .4s;
+    -webkit-transition: .4s;
+    -moz-transition: .4s;
+    -ms-transition: .4s;
+    -o-transition: .4s;
+    cursor: pointer;
+    font-size: 18px;
+}
+.team-item .icons i:hover{
+    color: #fff;
+    background: #744fa0;
+}
+.team-text{
+    text-align: center;
+    margin-top: -45%;
+    transition: .4s;
+    -webkit-transition: .4s;
+    -moz-transition: .4s;
+    -ms-transition: .4s;
+    -o-transition: .4s;
+}
+.team-text h3{
+    font-size: 18px;
+    font-weight: 700;
+    color: #353535;
+    text-transform: uppercase;
+    font-family: 'Raleway', sans-serif;
+}
+.team-text h5{
+    color: #555555;
+    font-size: 15px;
+    font-weight: 400;
+    padding: 15px 0 22px;
+    font-family: 'Open Sans', sans-serif;
+}
+.team-text p {
+	color: #777777;
+	font-size: 15px;
+	font-weight: 400;
+	line-height: 24px;
+	font-family: 'Open Sans', sans-serif;
+	padding: 0 74px 30px;
+}
+.team-item:hover .team-text{
+    margin-top: 0;
+}
+/* #####################  Team CSS End  #######################  */
+
+/* #####################  Testimonials CSS Start  #####################  */
+#testi .main-testi{
+    margin-top: 30px;
+    background: url(../images/testimonials.jpg) no-repeat center center;
+    background-size: cover;
+    padding: 30px 0 80px;
+    position: relative;
+    z-index: 1;
+}
+#testi .main-testi::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: -1;
+}
+.testi-text {
+    background: #f1f1f1;
+    text-align: center;
+    padding: 35px 150px 20px;
+    margin-bottom: 40px;
+    position: relative;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.testi-text::after{
+    content: '';
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    transform: translateX(-50%) rotate(45deg);
+    width: 30px;
+    height: 30px;
+    background: #f1f1f1;
+    border-radius: 5px;
+    -webkit-transform: translateX(-50%) rotate(45deg);
+    -moz-transform: translateX(-50%) rotate(45deg);
+    -ms-transform: translateX(-50%) rotate(45deg);
+    -o-transform: translateX(-50%) rotate(45deg);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.testi-text p {
+	color: #777777;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 26px;
+	font-family: 'Open Sans', sans-serif;
+    padding-bottom: 30px;
+}
+.testi-text i{
+    color: #744fa0;
+}
+.testi-text h4{
+    color: #353535;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: 'Raleway', sans-serif;
+    padding: 10px 0 7px;
+}
+.testi-text h6{
+    color: #555555;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Raleway', sans-serif;
+}
+.test-img figure{
+    width: 145px;
+    height: 145px;
+    border-radius: 50%;
+    background: #fff;
+    overflow: hidden;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    margin: 0 15px;
+}
+.test-img figure img{
+    padding-top: 10px;
+    width: 100%;
+    height: auto;
+}
+/* #####################  Testimonials CSS End  #######################  */
+
+/* #####################  Contact CSS Start  #####################  */
+#contact{
+    padding: 80px 0;
+}
+#contact form input,
+#contact form textarea
+{
+    padding: 15px;
+    margin-top: 30px;
+}
+#contact form input::placeholder{
+    color: #777777;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+}
+#contact form input[type="submit"]{
+    display: inline-block;
+    padding: 10px 20px;
+    background: #744fa0;
+    border: 1px solid #744fa0;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: 'Raleway', sans-serif;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+/* #####################  Contact CSS End  #######################  */
+
+/* #####################  Footer CSS Start  #####################  */
+footer{
+    padding: 30px 0;
+    background: #353535;
+    text-align: center;
+}
+.social-icon{
+    padding: 25px 0 25px;
+}
+.social-icon i{
+    color: #744fa0;
+    margin: 0 10px;
+    width: 50px;
+    height: 50px;
+    background: #fff;
+    font-size: 25px;
+    padding-top: 13px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    transition: .4s;
+    -webkit-transition: .4s;
+    -moz-transition: .4s;
+    -ms-transition: .4s;
+    -o-transition: .4s;
+    cursor: pointer;
+}
+.social-icon i:hover{
+    color: #fff;
+    background: #744fa0;
+}
+footer p{
+    font-size: 14px;
+    line-height: 24px;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+}
+footer p a{
+    color: #744fa0;
+    display: inline-block;
+}
+/* #####################  Footer CSS End  #######################  */
+
+#toTop{
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    cursor: pointer;
+    z-index: 999;
+}
+#toTop i{
+    font-size: 18px;
+    color: #fff;
+    background: #744fa0;
+    width: 35px;
+    text-align: center;
+    line-height: 35px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
